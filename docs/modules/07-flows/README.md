@@ -92,7 +92,7 @@ private val _uiState = MutableStateFlow(UserUiState())
 val uiState: StateFlow<UserUiState> = _uiState.asStateFlow()
 ```
 
-### 6. Channel
+### Channel
 
 ----
 
@@ -104,7 +104,7 @@ consumers will receive each event, as opposed to `SharedFlow` where both consume
 - **Types**: `Rendezvous` (default), `Buffered`, `Conflated`, `Unlimited`.
 - **Send/Receive**: Producers `send` and consumers `receive`.
 
-### 7. Flow Operators
+### Flow Operators
 
 ----
 
@@ -122,7 +122,7 @@ getUsers()
     .collect { name -> println(name) } // Collect the names (String) and print them
 ```
 
-### 8. Best Practices
+### Best Practices
 
 ----
 
