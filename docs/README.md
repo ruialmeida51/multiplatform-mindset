@@ -5,8 +5,6 @@ This directory contains all learning materials for the Multiplatform Mindset cur
 ## Structure
 
 - **modules/** - The 12 core learning modules that make up the curriculum
-- **examples/** - Code examples and practical demonstrations (coming soon)
-- **resources/** - Additional learning resources, references, and links (coming soon)
 
 ## Navigation
 
