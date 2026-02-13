@@ -283,7 +283,7 @@ project-root/
 │   ├── ui-components/
 │   ├── coroutines-ktx/   
 ├── features/
-│   ├── profile/          # User details, UpdateProfileUseCase    
+│   ├── auth/             # Login, Signup, AuthRepository
 │   │   ├── data/            
 │   │   ├── domain/        
 │   │   ├── presentation/  
@@ -428,9 +428,9 @@ class GetUserUseCase(
     private val userLocalSource: UserLocalSource,
     private val userRemoteSource: UserRemoteSource,
 ) {
-    fun getUser(): User = remoteSource
+    fun getUser(): User = userRemoteSource
         .getUser()
-        .also { fetchedUser -> localSource.save(fetchedUser) }
+        .also { fetchedUser -> userLocalSource.save(fetchedUser) }
 
 }
 

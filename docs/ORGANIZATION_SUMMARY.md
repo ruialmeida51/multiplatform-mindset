@@ -33,10 +33,6 @@ docs/
 │   ├── 10-kmp-internals/
 │   ├── 11-dependency-injection/
 │   └── 12-contributing/
-├── examples/                    # Placeholder for code examples
-│   └── README.md
-└── resources/                   # Placeholder for additional resources
-    └── README.md
 ```
 
 ## Module Structure
@@ -72,59 +68,4 @@ Each of the 12 modules follows a consistent format:
 - **Module 11**: Dependency Injection
 - **Module 12**: Contributing to the Knowledge Base
 
-## Key Features
-
-### Navigation
-- Sequential learning path with clear progression
-- Each module links to the next
-- Main README provides overview with links to all modules
-- Documentation index (docs/README.md) for quick reference
-
-### Extensibility
-- Placeholder directories for future content:
-  - `docs/examples/` for code samples
-  - `docs/resources/` for external links and references
-- Consistent structure makes adding content straightforward
-
-### Learning-Focused
-- Checkboxes in each module allow learners to track progress
-- Clear learning objectives guide expectations
-- Modular structure supports self-paced learning
-- Can be forked for personal note-taking
-
-### Community-Oriented
-- Module 12 dedicated to contribution guidelines
-- Open-source friendly structure
-- Ready for community contributions and improvements
-- Built to scale with additional content
-
-## Ready for Content
-
-The organizational structure is now complete and ready for:
-1. **Content creation** - Adding detailed explanations to each module
-2. **Code examples** - Practical demonstrations in the examples directory
-3. **Resource curation** - Links to articles, videos, and tools
-4. **Community contributions** - Following the guidelines in Module 12
-
-## Teaching Alignment
-
-This structure directly maps to the teaching curriculum that has been used successfully with interns:
-
-1. ✅ Understanding and context
-2. ✅ Design principles and architecture
-3. ✅ Architectural patterns
-4. ✅ Kotlin language mastery
-5. ✅ Asynchronous programming (Coroutines)
-6. ✅ Advanced coroutine patterns
-7. ✅ Reactive programming (Flows)
-8. ✅ Modern UI with Compose
-9. ✅ Platform-specific code
-10. ✅ Understanding internals
-11. ✅ Dependency management
-12. ✅ Contributing back to the community
-
 ---
-
-**Status**: Repository structure is complete and ready for content population.
-
-**Next Steps**: Begin adding detailed content to individual modules, starting with Module 01.

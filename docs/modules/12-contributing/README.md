@@ -1,4 +1,12 @@
+🚧 IN CONSTRUCTION & REVIEW
+
+---
+
 # Module 12: Contributing to the Knowledge Base
+
+---
+
+🚧 IN CONSTRUCTION & REVIEW
 
 ## Overview
 Thank you for completing this learning journey! This module provides guidance on how you can contribute back to this open-source knowledge base and help others learn.
