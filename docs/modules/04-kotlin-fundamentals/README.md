@@ -41,25 +41,6 @@ fun main() {
 }
 ```
 
-```kotlin
-data class DataClass(
-    val param1: String,
-    var param2: String,
-)
-
-fun main() {
-    val immutableClass = DataClass(
-        param1 = "1",
-        param2 = "2"
-    )
-
-    immutableClass.param2 = "3"
-    // Prints "3". Even though the reference 'immutableClass' is 'val' (immutable),
-    // the property 'param2' is 'var' (mutable), so it can be changed.
-    print(immutableClass.param2)
-}
-```
-
 ### Sealed Hierarchies
 
 ----
@@ -139,6 +120,25 @@ fun main() {
 
     // Invalid: Reassigning the reference
     container = MutableContainer(2) // Compile Error
+}
+```
+
+```kotlin
+data class DataClass(
+    val param1: String,
+    var param2: String,
+)
+
+fun main() {
+    val immutableClass = DataClass(
+        param1 = "1",
+        param2 = "2"
+    )
+
+    immutableClass.param2 = "3"
+    // Prints "3". Even though the reference 'immutableClass' is 'val' (immutable),
+    // the property 'param2' is 'var' (mutable), so it can be changed.
+    print(immutableClass.param2)
 }
 ```
 
