@@ -46,26 +46,4 @@ Each of the 12 modules follows a consistent format:
 4. **Resources** - Section ready for content links (marked as "to be added")
 5. **Next Steps** - Link to the following module for easy navigation
 
-## The 12 Modules
-
-### Part 1: Foundations (Modules 1-3)
-- **Module 01**: Understanding KMP and CMP
-- **Module 02**: SOLID and CLEAN Principles
-- **Module 03**: MVVM and Unidirectional Data Flow
-
-### Part 2: Kotlin Essentials (Modules 4-7)
-- **Module 04**: Kotlin Language Features
-- **Module 05**: Coroutines Fundamentals
-- **Module 06**: Jobs and Supervisor Patterns
-- **Module 07**: Flows and Reactive Programming
-
-### Part 3: Compose and Multiplatform (Modules 8-10)
-- **Module 08**: Compose Fundamentals
-- **Module 09**: expect/actual for KMP/CMP
-- **Module 10**: KMP/CMP Internals
-
-### Part 4: Advanced Patterns (Modules 11-12)
-- **Module 11**: Dependency Injection
-- **Module 12**: Contributing to the Knowledge Base
-
 ---
