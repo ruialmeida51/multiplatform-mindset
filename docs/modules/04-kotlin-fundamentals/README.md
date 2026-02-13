@@ -54,7 +54,8 @@ fun main() {
     )
 
     immutableClass.param2 = "3"
-    // = ? (It prints 3, changes in runtime affect all instances of this object)
+    // Prints "3". Even though the reference 'immutableClass' is 'val' (immutable),
+    // the property 'param2' is 'var' (mutable), so it can be changed.
     print(immutableClass.param2)
 }
 ```
@@ -191,10 +192,41 @@ with(person) {
 }
 ```
 
+### Functional Programming: Lambdas and Higher-Order Functions
+
+----
+
+Kotlin treats functions as first-class citizens. This means they can be stored in variables, passed as arguments, or
+returned from other functions.
+
+#### Lambdas
+
+Lambdas are anonymous functions that can be used as values.
+
+```kotlin
+val sum = { a: Int, b: Int -> a + b }
+println(sum(2, 3)) // 5
+```
+
+#### Higher-Order Functions
+
+A higher-order function is a function that takes another function as a parameter or returns a function.
+
+```kotlin
+fun executeOperation(a: Int, b: Int, operation: (Int, Int) -> Int): Int {
+    return operation(a, b)
+}
+
+val result = executeOperation(10, 5) { x, y -> x - y } // Trailing lambda syntax
+println(result) // 5
+```
+
 ### Extension Functions
 
+----
+
 Extensions allow you to add functionality to existing classes without inheriting from them. If you come from a Java
-background, they're kind of translated to the same thing as a global *insert visibility* static function. 
+background, they're kind of translated to the same thing as a global static function.
 
 ```kotlin
 // Extending the standard String class

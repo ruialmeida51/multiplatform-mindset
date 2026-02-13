@@ -12,12 +12,6 @@ and why they might be the right choice for your project.
 - Compare KMP/CMP with other cross-platform solutions (Flutter, React Native, etc.)
 - Understand when to choose KMP/CMP for your project
 
-## Topics Covered
-
-- [What is Kotlin Multiplatform and Compose Multiplatform?](#1-what-is-kotlin-multiplatform-and-compose-multiplatform)
-- [KMP/CMP vs Alternatives](#2-kmpcmp-versus-alternatives)
-- [When to use and not to use KMP/CMP](#3-when-to-use-and-not-use-kmpcmp)
-
 ### 1. What is Kotlin Multiplatform and Compose Multiplatform?
 
 ----
@@ -128,11 +122,38 @@ It's flexible in a way the other frameworks just aren't.
 
 ### 3. When to use and not use KMP/CMP
 
-To be added.
+Deciding whether to adopt Kotlin Multiplatform and Compose Multiplatform depends on your project's goals, team
+expertise, and long-term maintenance strategy.
+
+#### When to use KMP/CMP:
+
+- **Logic Sharing**: If your application has complex business logic, validation rules, or data processing that must be
+  identical across Android, iOS, and Web.
+- **Existing Android Expertise**: If your team is already proficient in Kotlin and Jetpack Compose, the learning curve
+  for KMP and CMP is significantly reduced.
+- **Gradual Migration**: If you have an existing native application and want to start sharing code without a complete
+  rewrite. You can start by sharing a single data model or a single utility function.
+- **Consistent UI/UX**: When you want your application to look and behave consistently across all platforms with high
+  performance, while still having the escape hatch to native components when needed.
+- **Maintenance Efficiency**: When you want to reduce the surface area for bugs by having a single implementation of
+  core features.
+
+#### When not to use KMP/CMP:
+
+- **Simple, Single-Platform Apps**: If you are only targeting one platform and have no plans to expand, the overhead of
+  setting up a multiplatform project might not be worth it.
+- **Extreme Platform Divergence**: If your Android and iOS apps are fundamentally different in terms of features and
+  user flow, the benefits of sharing logic are diminished.
+- **No Kotlin Knowledge**: If your team is primarily composed of developers who are unwilling to learn Kotlin or
+  declarative UI patterns.
+- **Highly Experimental Features**: While KMP is stable, some specific platform-native integrations might still be in
+  early stages or require significant `expect`/`actual` boilerplate.
 
 ## Resources
 
-_Content to be added_
+- [Official Kotlin Multiplatform Documentation](https://kotlinlang.org/docs/multiplatform.html)
+- [Compose Multiplatform Documentation](https://www.jetbrains.com/lp/compose-multiplatform/)
+- [Kotlin Multiplatform Samples](https://github.com/Kotlin/kmp-snippets) - Official code snippets and samples.
 
 ## Next Steps
 
